@@ -19,6 +19,7 @@
         font-style: normal; 
 }
 
+
 /* Here I am setting the text settings for the body tag */
 body {
     display: flex;
@@ -52,6 +53,7 @@ button {
     background-color: #d9d9c2;
     font-size: 3em;
     line-height: 0;
+    font-family: 'LemonMilk', serif;
 }
 
 /* Here I am adding a hover effect to the button so that they grow when the user hovers over them */
