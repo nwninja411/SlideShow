@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Made a favicon for a past class so figuired I'd add that to my webpage -->
+    <link rel="icon" href="./Images/Favicon.svg" type="image/x-icon">
     <title>Nature Collection</title>
+    <!-- Link the CSS script -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+
+    <!-- Give your page a header -->
     <header>
-        <h1>The Horton Creek Collection</h1>
+        <h1>Horton Creek Collection</h1>
         <h2>By Noah Walker</h2>
     </header>
     <main>
-        <p>Horton Creek is a beatuiful hike located 20 miles from Payson Arizona. Horton Creek is part of the Mogollon Rim area and through the entire hike you are following a creek that has beatuiful photo opprotunities. In this collection you will have the opprotunity to look at some of the photos I captured during my time hiking Horton Creek. Enjoy!</p>
-
-        <img id="ImgSlide" src="" alt="WRITE DESCRIPTION">
-
-        <button onClick= "PreviousSlide"();>Previous</button>
-        <button onClick= "NextSlide"();>Next</button>
+        <!-- Here I am adding the img to a division tag so that I can create a container in CSS because one picture shrinks and changes the page layout which ruins the user experience-->
+        <div class="ImgFrame">
+        <!-- This line sets up my HTML and JS to work together to display the images -->
+        <img id="ImgSlide" src="" alt="Nature Pictures which showcase photos I took at the Horton Creek Hike">
+        </div>
+        <!-- These two lines add buttons which will allow the user -->
+        <button onClick= "PreviousSlide()";>&larr;</button>
+        <button onClick= "NextSlide()";>&rarr;</button>
 
     </main>
 
-    <script src="script.js">
-    </script>
+    <!-- Link the JavasScript -->
+    <script src="script.js"></script>
+
+
+    <!-- Add a footer with a bit of info about the trail -->
+    <footer>
+        <p>Horton Creek is a beautiful hike located about 20 miles from Payson, Arizona. Nestled in the Mogollon Rim region, the trail follows a scenic creek the entire way, offering countless photo opportunities along the path. This collection showcases some of the moments I captured during my time exploring Horton Creek. I hope you enjoy the journey!</p>
+    </footer>
     
 </body>
 </html>
