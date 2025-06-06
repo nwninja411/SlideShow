@@ -1,5 +1,86 @@
-#ImgSlide{
+/* Here I am setting up the fonts I will be using for this webpage. */
+@font-face {
+        /*Here I am naming my font so that I can refernce it*/
+        font-family: 'LemonMilk';
+        /*Here I am linking my font file so that when I refernce it it knows what the font looks like*/
+        src: url('lemon_milk/LEMONMILK-Light.otf') format('opentype');
+        /*these tags let the code know that the style and weight should be normal rather than bold or italic*/
+        font-weight: normal; 
+        font-style: normal; 
+}
+
+@font-face {
+        /*Here I am naming my font so that I can refernce it*/
+        font-family: 'Mangiola';
+        /*Here I am linking my font file so that when I refernce it it knows what the font looks like*/
+        src: url('mangiola/Mangiola-Regular.ttf') format('truetype');
+        /*these tags let the code know that the style and weight should be normal rather than bold or italic*/
+        font-weight: normal; 
+        font-style: normal; 
+}
+
+/* Here I am setting the text settings for the body tag */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #d9d9c2;
+    background-color: #1f2818;
+}
+
+/* Here I am setting the text settings for the header tag */
+header {
+    font-family: 'LemonMilk', serif;
+}
+
+/* Here I am setting the text settings for the paragraph tag */
+p {
+    font-size: 1.6em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Mangiola', serif;
+    overflow: hidden;
+}
+
+/* Style the buttons so they aren't boring */
+button {
+    width: 1.5em;
+    height: 1em;
+    border-radius: 10px;
+    background-color: #d9d9c2;
+    font-size: 3em;
+    line-height: 0;
+}
+
+/* Here I am adding a hover effect to the button so that they grow when the user hovers over them */
+button:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: transform .5s ease,box-shadow .5s ease, text-shadow .5s ease;;
+    text-shadow: 2px 2px 5px #1f2818;
+}
+
+/* Lets style the frame which hold my pictures*/
+.ImgFrame {
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 1000px;
+
+    /*Instead of setting the height to auto or setting a value I am setting the aspect ratio because I know the aspect ratio of my pictures and that will ensure that no matter how much the container has to shrink it will reamin the same aspect ratio*/
+    aspect-ratio: 3/2; 
+
+    overflow: hidden; 
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9d9c2;
+    border: 1rem solid #d9d9c2; 
+}
+
+#ImgSlide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
